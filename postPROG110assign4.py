@@ -5,8 +5,8 @@
 import numpy as np
 #import matplotlib
 import matplotlib.pyplot as plt
-#get read and write from scipy's input/output module
-from scipy.io.wavfile import write,read
+#get write from scipy's input/output module
+from scipy.io.wavfile import write
 
 #methods provided on handout in class on 11/6/2019 (used to complete problems 5 and 6)
 #a method to generate nrCycles of a sine wave (provided on handout in class 11/6/19)
@@ -26,8 +26,6 @@ def generateSinewave(nrCycles, nrdataPointsPerCycles = 2048):
     plt.ylabel('sin (x)')
     plt.axis('tight')
     plt.show()
-
-
 
 #a method to scale the data in numpy arrays to a 16bit data space ((provided on handout in class 11/6/19)
 def int16scale(npArray):
