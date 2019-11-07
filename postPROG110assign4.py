@@ -14,11 +14,11 @@ def generateSinewave(nrCycles, nrdataPointsPerCycles = 2048):
     """a method to generate nrCycles of a sine wave """
     cycles = np.linspace(0,nrCycles * 2 * np.pi, nrdataPointsPerCycles)
     cyclesArray = np.array(np.sin(cycles))
-    plt.plot(cyclesArray)
-    plt.xlabel('angle [rad]')
-    plt.ylabel('sin (x)')
-    plt.axis('tight')
-    plt.show()
+    #plt.plot(cyclesArray)
+    #plt.xlabel('angle [rad]')
+    #plt.ylabel('sin (x)')
+    #plt.axis('tight')
+    #plt.show()
     
     wave = int16scale(cyclesArray)
     plt.plot(wave)
@@ -57,6 +57,7 @@ write("noisy.wav",44100,noise)
 #Using the matplotlib plotting routines, plot the waveform data to screen
 #plot the noise
 plt.plot(noise)
+plt.show()
 
 #5. && #6.
 #Generate a numpy array of samples of one cycle of a sine wave and plot the array.
