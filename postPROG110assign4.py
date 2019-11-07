@@ -27,13 +27,8 @@ noise = np.int16(noise)
 #write the noise to a new wav file
 write("noisy.wav",44100,noise)
 
-
-#plot it and save it to a wav file
+#4.
+#Using the matplotlib plotting routines, plot the waveform data to screen
 #plot the noise
 plt.plot(noise)
 
-#plot the scaled noise
-plt.plot(noise)
-
-#print the values of noise
-print(noise)
